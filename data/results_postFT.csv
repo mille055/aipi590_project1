@@ -1,0 +1,237 @@
+index,protocol,predicted_protocol,order,predicted_order,comments,predicted_comments,score
+0,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+1,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+2,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+3,routine,renal stone,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+4,rcc,rcc,CT RCC protocol incl chest w MIPS and dual abd pel w wo,CT RCC protocol incl chest w MIPS and dual abd pel w wo,[],[],1.0
+5,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+6,routine,routine,CT pelvis with contrast,CT pelvis with contrast,[],[],1.0
+7,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+8,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+9,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+10,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,['split'],[],0.9
+11,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,['oral contrast'],['oral contrast'],1.0
+12,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['split'],[],0.9
+13,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+14,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+15,gu,rcc,CT abdomen pelvis with and without contrast,CT abdomen pelvis with contrast,[],[],0.4
+16,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['oral contrast'],['reroute coverage'],0.9
+17,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+18,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+19,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+20,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+21,routine,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],0.5
+22,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+23,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+24,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+25,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+26,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+27,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+28,rcc,rcc,CT RCC protocol incl chest w MIPS and dual abd pel w wo,CT RCC protocol incl chest w MIPS and dual abd pel w wo,[],[],1.0
+29,gu,routine,CT abdomen pelvis with and without contrast,CT abdomen pelvis with contrast,[],[],0.4
+30,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,['oral contrast'],['reroute contrast'],0.9
+31,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+32,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+33,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+34,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+35,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+36,routine,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,['split'],[],0.4
+37,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+38,pancreas,pancreas,CT dual pancreas incl CT abd pel w and CT chest w MIPS,CT dual pancreas incl CT abd pel w MIPS,[],[],0.9
+39,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,['reroute '],[],0.9
+40,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+41,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+42,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+43,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+44,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+45,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+46,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+47,rcc,rcc,CT RCC protocol inc CT dual abd and pelvis w wo contrast,CT RCC protocol inc CT dual abd and pelvis w wo contrast,[],[],1.0
+48,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+49,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+50,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+51,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+52,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+53,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+54,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+55,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+56,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+57,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+58,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+59,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+60,pancreas,pancreas,CT dual pancreas protocol incl CT abd pel w contrast,CT dual pancreas protocol incl CT abd pel w contrast,[],[],1.0
+61,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+62,crohns,crohns,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+63,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+64,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+65,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+66,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+67,cirrhosis,cirrhosis,CT cirrhosis abdomen pelvis w contrast protocol,CT cirrhosis abdomen pelvis w contrast protocol,[],[],1.0
+68,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,['low pelvis'],[],0.9
+69,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+70,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+71,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],1.0
+72,routine,routine,CT pelvis with contrast,CT pelvis with contrast,['low pelvis'],[],0.9
+73,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+74,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+75,routine,pancreas,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+76,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['md check for drain'],[],0.9
+77,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+78,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+79,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+80,radio embo,hepatic resection,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+81,gu,gu,CT GU protocol inc CT dual abd and pelvis with and without contrast,CT GU protocol inc CT dual abd and pelvis with and without contrast,[],[],1.0
+82,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['rectal contrast'],['md check for drain'],0.9
+83,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+84,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+85,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+86,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+87,cirrhosis,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+88,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['split'],['split'],1.0
+89,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+90,trauma,trauma,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+91,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['md check for drain'],[],0.9
+92,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+93,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['oral contrast'],[],0.9
+94,trauma,trauma,CT chest abdomen pelvis level two trauma with contrast with MIPS protocol,CT chest abdomen pelvis level two trauma with contrast with MIPS protocol,[],[],1.0
+95,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['split'],[],0.9
+96,routine,crohns,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['md check for drain'],[],0.4
+97,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],1.0
+98,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+99,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+100,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+101,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+102,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['split'],[],0.9
+103,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+104,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+105,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+106,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+107,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+108,cirrhosis,cirrhosis,CT cirrhosis abdomen only w contrast protocol,CT cirrhosis abdomen only w contrast protocol,[],[],1.0
+109,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+110,cirrhosis,cirrhosis,CT cirrhosis abdomen pelvis w contrast protocol,CT cirrhosis abdomen pelvis w contrast protocol,['steroid prep'],[],0.9
+111,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+112,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+113,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+114,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+115,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+116,rcc,rcc,CT RCC protocol inc CT dual abd and pelvis w wo contrast,CT RCC protocol inc CT dual abd and pelvis w wo contrast,[],[],1.0
+117,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+118,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+119,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+120,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+121,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,['low pelvis'],[],0.9
+122,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+123,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+124,rcc,rcc,CT RCC protocol inc CT dual abd and pelvis w wo contrast,CT RCC protocol inc CT dual abd and pelvis w wo contrast,[],[],1.0
+125,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+126,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+127,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+128,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+129,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+130,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+131,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+132,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+133,gu,gu,CT GU protocol inc CT dual abd and pelvis with and without contrast,CT GU protocol inc CT dual abd and pelvis with and without contrast,[],[],1.0
+134,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+135,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+136,routine,crohns,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+137,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+138,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+139,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+140,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+141,pancreas,pancreas,CT dual pancreas incl CT abd pel w and CT chest w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],0.9
+142,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+143,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,['oral contrast'],[],0.9
+144,gi bleed,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+145,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+146,routine,routine,CT pelvis with contrast,CT pelvis with contrast,['low pelvis'],[],0.9
+147,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+148,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+149,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+150,routine,routine,CT abdomen with contrast,CT abdomen with contrast,[],[],1.0
+151,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+152,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+153,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['md check for drain'],[],0.9
+154,trauma,trauma,CT chest abdomen pelvis level two trauma with contrast with MIPS protocol,CT chest abdomen pelvis level two trauma with contrast with MIPS protocol,[],[],1.0
+155,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+156,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+157,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+158,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+159,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+160,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+161,gu,routine,CT abdomen pelvis with and without contrast,CT abdomen pelvis with contrast,[],[],0.4
+162,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+163,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+164,cirrhosis,cirrhosis,CT cirrhosis abdomen only w contrast protocol,CT cirrhosis abdomen only w contrast protocol,[],[],1.0
+165,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+166,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+167,pancreas,pancreas,CT dual pancreas protocol incl CT abd pel w contrast,CT dual pancreas protocol incl CT abd pel w contrast,[],[],1.0
+168,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+169,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+170,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+171,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+172,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+173,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+174,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+175,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+176,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+177,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+178,routine,crohns,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],0.5
+179,gu,gu,CT GU protocol inc CT dual abd and pelvis with and without contrast,CT GU protocol inc CT dual abd and pelvis with and without contrast,[],[],1.0
+180,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+181,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+182,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],1.0
+183,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+184,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+185,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+186,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+187,dual liver,dual liver,CT dual liver abdomen only w contrast protocol,CT dual liver abdomen only w contrast protocol,[],[],1.0
+188,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],1.0
+189,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+190,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+191,routine,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],0.5
+192,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+193,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+194,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+195,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+196,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+197,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+198,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+199,gu,gu,CT GU protocol inc CT dual abd and pelvis with and without contrast,CT GU protocol inc CT dual abd and pelvis with and without contrast,[],[],1.0
+200,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+201,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+202,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,[],[],1.0
+203,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+204,crohns,crohns,ct ,CT abdomen pelvis with contrast,[],[],0.9
+205,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+206,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+207,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+208,pancreas,pancreas,CT dual pancreas protocol incl CT abd pel w contrast,CT dual pancreas protocol incl CT abd pel w contrast,[],[],1.0
+209,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['low pelvis'],[],0.9
+210,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+211,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+212,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+213,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+214,tcc,tcc,CT TCC protocol incl chest w MIPS and dual abd pel w wo,CT TCC protocol incl chest w MIPS and dual abd pel w wo,[],[],1.0
+215,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+216,noncon,noncon,CT abdomen pelvis without contrast,CT abdomen pelvis without contrast,[],[],1.0
+217,routine,crohns,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['oral contrast'],[],0.4
+218,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+219,noncon,noncon,CT chest abdomen pelvis without contrast with MIPS,CT chest abdomen pelvis without contrast with MIPS,['split'],[],0.9
+220,rcc,rcc,CT RCC protocol incl chest w MIPS and dual abd pel w wo,CT RCC protocol incl chest w MIPS and dual abd pel w wo,[],[],1.0
+221,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+222,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+223,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+224,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+225,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['oral contrast'],['reroute coverage'],0.9
+226,cirrhosis,cirrhosis,CT cirrhosis abdomen pelvis w contrast protocol,CT cirrhosis abdomen pelvis w contrast protocol,[],[],1.0
+227,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,['split'],[],0.9
+228,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+229,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+230,trauma,trauma,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+231,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
+232,renal stone,renal stone,CT renal stone protocol inc CT abd and pelvis wo contrast,CT renal stone protocol inc CT abd and pelvis wo contrast,[],[],1.0
+233,gi bleed,gi bleed,CT occult GI bleed incl dual abdomen pelvis with and without contrast,CT occult GI bleed incl dual abdomen pelvis with and without contrast,[],[],1.0
+234,routine,routine,CT chest abdomen pelvis with contrast w MIPS,CT chest abdomen pelvis with contrast w MIPS,[],[],1.0
+235,routine,routine,CT abdomen pelvis with contrast,CT abdomen pelvis with contrast,[],[],1.0
