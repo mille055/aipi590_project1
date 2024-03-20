@@ -9,7 +9,7 @@ Performing the appropriate type of abdominal CT scan is important to high qualit
 ## Methods
 
 ## Resuls
-<img src = asset"s/confusion_matrix-2.png" width="100" height="100">
+<img src = "assets/confusion_matrix-2.png" width="100" height="100">
 
 
 ## References
