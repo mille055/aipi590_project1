@@ -27,7 +27,7 @@ I used Mistral 7B Instruct-v0.2 as a base model and then fine-tuned over the tra
    Creatinine (mg/dL): 1.1
    On Dialysis: 0 
    Clinical Summary: The patient is a 45-year-old male with newly diagnosed melanoma (Clark level IV) arising from the left great toe. The scan is for initial staging purposes.’
-```
+   ```
 
 
 ## Results
