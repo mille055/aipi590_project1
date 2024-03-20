@@ -9,3 +9,4 @@ openpyxl
 xlrd
 openai
 huggingface_hub
+dotenv
