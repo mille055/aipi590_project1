@@ -8,7 +8,7 @@ This project fine tunes a Mistral 7B Instruct model to protocol CT scans.
 ## Methods
 
 ## Resuls
-![Alt Text](assets/)
+![Alt Text](assets/confusion_matrix-2.png)
 
 
 ## References
