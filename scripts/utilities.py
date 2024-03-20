@@ -75,6 +75,7 @@ def build_prompt_question(row, prompt_instruction=prompt_instruction2):
     'Reason for Exam: ' + row['indication'] + '\n' + \
     'Contrast Allergy: ' + str(bool(row['contrast_allergy'])) + '\n' + \
     'Allergy severity: ' + row['allergy_severity'] + '\n' + \
+    'Creatinine: ' + str(row['creatinine']) + '\n' + \ 
     'On Dialysis: ' + str(bool(row['on_dialysis'])) + '\n' + \
     'Clinical Summary: ' + row['clinical_summary'] + '\n'
 
