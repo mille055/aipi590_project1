@@ -373,7 +373,18 @@ def test_model(df, pipe, prompt_instruction=prompt_instruction):
 
   return overall_score/len(df)
 
+def get_dataframes(filename):
+    '''
+    Returns the full, train, and test dataframes
+    '''
+    full_df = build_dataset_from_file(filename)
+    prompt_df = create_prompt_dataframe(full_df)
+    dataset = Dataset(pa.Table.from_pandas(prompt_df))
+    train_data, test_data = train_test_split(dataset, test_size=0.2, random_state=12)
+    test_data_df = pd.DataFrame(test_data)
+    train_data_df = pd.DataFrame(train_data)
 
+    return prompt_df, train_data_df, test_data_df
 
 
 prompt_instruction = '''
