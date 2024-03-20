@@ -2,6 +2,7 @@
 #aipi590 project 1 
 
 This project fine tunes a Mistral 7B Instruct model to protocol CT scans. 
+
 <img src="assets/example_ct.jpg" width = "300" height = "200">
 
 ## Background
