@@ -100,6 +100,9 @@ Of note, another longer instruction prompt was also used, wihch was not technica
    ```
    {"accession": "800774", "predicted_order": "CT chest abdomen pelvis with contrast w MIPS", "predicted_protocol": "routine", "predicted_comments": []}
    ```
+4.  A custom scoring function was used for the extracted portion of text output corresponding to the JSON object, giving 0.3 points if the output was in JSON format with the expected keys, 0.5 points if the predicted_protocol matched, and 0.1 points each if the predicted_order and predicted_comments matched, for a total of 1.0 points.
+5.  Fine-tuning was performed using the QLora ...
+   
 
 ## Results
 
@@ -116,3 +119,5 @@ For the performance on the protocol class alone, the accuracy for the base model
 
 ## References
 1. Xavier BA, Chen PH, Natural Language Procesing fo Imaging Protocol Assignment, Journal of Digital Imaging (2022) 35:1120–1130.[Link](https://doi.org/10.1007/s10278-022-00633-8)
+2. Bhayana R, Chatbots and Large Language Models in Radiology: A Practical Primer for Clinical and Research Applications, Radiology 2024; 310(1). [Link]https://doi.org/10.1148/radiol.232756)
+3. 
