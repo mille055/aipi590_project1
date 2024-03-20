@@ -1,3 +1,6 @@
+### Code adapted from https://adithyask.medium.com/a-beginners-guide-to-fine-tuning-mistral-7b-instruct-model-0f39647b20fe
+
+
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig,HfArgumentParser,TrainingArguments,pipeline, logging, LlamaTokenizer
 from peft import LoraConfig, PeftModel, prepare_model_for_kbit_training, get_peft_model
 import os,re
