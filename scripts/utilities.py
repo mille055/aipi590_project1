@@ -12,7 +12,10 @@ from google.colab import userdata
 import json
 from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi
+from dotenv import load_dotenv
 
+load_dotenv()
+token = os.getenv('HUGGINGFACE_TOKEN')
 
 def build_dataset_from_file(file_path, num_test = 200, output_file = '/content/CT_Protocol/data/datacsv031524.xlsx'):
   """
@@ -219,10 +222,10 @@ def extract_and_parse_json2(response):
     try:
         # Normalize response by ensuring it uses double quotes.
         normalized_response = json_str.replace("'", '"')
-        #print('normalized_response is', normalized_response, type(normalized_response))
+        
         # Correctly handle empty strings for predicted_comments.
         corrected_response = re.sub(r'"predicted_comments":\s*""', '"predicted_comments": []', normalized_response)
-        #print('corrected_response after first regex is ', corrected_response, type(corrected_response))
+        
         # Handle correctly formatted lists and empty lists.
         corrected_response = re.sub(
             r'"predicted_comments":\s*"(\[.*?\])"',
@@ -230,32 +233,9 @@ def extract_and_parse_json2(response):
             corrected_response)
         # Handle empty strings for predicted_comments by converting them to empty lists.
         corrected_response = re.sub(r'"predicted_comments":\s*""', '"predicted_comments": []', corrected_response)
-        #print('corrected_response after third regex is ', corrected_response, type(corrected_response))
-
-
+        
         json_data = json.loads(corrected_response)
-        #print('json_data is ', json_data, type(json_data))
-                                   # # Handle empty strings for predicted_comments by converting them to empty lists.
-        # corrected_response = re.sub(
-        #     r'"predicted_comments":\s*""',
-        #     '"predicted_comments": []',
-        #     corrected_response)
-
-        # print('corrected_response after third regex is ', corrected_response, type(corrected_response))
-
-        # Special handling for lists represented as a string with internal quotes.
-        # This approach attempts to correct the formatting by escaping internal quotes.
-        # def correct_list(match):
-        #     list_str = match.group(1)
-        #     list_str_escaped = list_str.replace('"', '\\"')
-        #     return f'"predicted_comments": "{list_str_escaped}"'
-
-        # corrected_response = re.sub(
-        #     r'"predicted_comments":\s*"(\[.*?\])"',
-        #     correct_list,
-        #     corrected_response)
-
-
+    
         # If predicted_comments is a string (due to escaping), parse it separately.
         if isinstance(json_data.get('predicted_comments', ''), str):
             json_data['predicted_comments'] = json.loads(json_data['predicted_comments'])
@@ -344,9 +324,6 @@ def test_model(df, pipe, prompt_instruction=prompt_instruction):
     true_answer_json = json.loads(true_answer.replace("'", '"'))
 
     print('true answer json:', true_answer_json, type(true_answer_json))
-
-    # #predicted_answer = json.loads(predicted_answer)
-    # print('predicted_answer:', predicted_answer, type(predicted_answer))
 
     score, accession, predicted_order, predicted_protocol, predicted_comments = response_score(extracted_answer, true_answer_json)
     overall_score += score
