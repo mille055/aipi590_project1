@@ -28,6 +28,7 @@ I used Mistral 7B Instruct-v0.2 as a base model and then fine-tuned over the tra
    On Dialysis: 0 
    Clinical Summary: The patient is a 45-year-old male with newly diagnosed melanoma (Clark level IV) arising from the left great toe. The scan is for initial staging purposes.’
    ```
+
 Of note, another longer instruction prompt was also used, wihch was not technically feasible, causing memory issues on the fine-tuning task. For reference, here is the longer instruction prompt without the clinical data: 
    ```
    Use the inputs to expertly decide on the appropriate protocol for the CT study.  The description of each CT protocol is given in the text below (the name to return for each protocol is in parentheses). For scans in which the order does not match the desired protocol, or if there are other outstanding questions the radiologist needs to resolve (e.g., elevated creatinine above 2.0 mg/dL or history of severe allergic reaction to IV contrast such as trouble breathing, throat swelling, or anaphylaxis, and contrast enhanced scan ordered), then add a comment that will route the case back to the radiologist (comments should be from the list given below.
@@ -92,9 +93,13 @@ Of note, another longer instruction prompt was also used, wihch was not technica
    {"predicted_order": "CT abdomen pelvis with contrast", "predicted_protocol": "routine", "predicted_comments": ["oral contrast"]}
    The response should be the json object and nothing else.
 
-   '''
+   ```
 
+3. The output was expected to be JSON format as below:
 
+   ```
+   {"accession": "800774", "predicted_order": "CT chest abdomen pelvis with contrast w MIPS", "predicted_protocol": "routine", "predicted_comments": []}
+   ```
 
 ## Results
 
