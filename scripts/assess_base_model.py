@@ -17,21 +17,7 @@ from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi
 from utilities import *
 
-
-def get_dataframes(filename):
-    '''
-    Returns the full, train, and test dataframes
-    '''
-    full_df = build_dataset_from_file(filename)
-    prompt_df = create_prompt_dataframe(full_df)
-    dataset = Dataset(pa.Table.from_pandas(prompt_df))
-    train_data, test_data = train_test_split(dataset, test_size=0.2, random_state=12)
-    test_data_df = pd.DataFrame(test_data)
-    train_data_df = pd.DataFrame(train_data)
-
-    return prompt_df, train_data_df, test_data_df
-
-if name=="__main__":
+def main():
     filename = '../content/CT_Protocol/data/dataset031524.xlsx'
     _, _, test_df = get_dataframes(filename)
     token = userdata.get('HUGGINGFACE_TOKEN')
@@ -65,5 +51,8 @@ if name=="__main__":
     base_model_score = test_model(test_df, pipe)
     print('Base model score:', base_model_score)
 
+    
 
+if name=="__main__":
+    main()
 
