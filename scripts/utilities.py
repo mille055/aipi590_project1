@@ -68,7 +68,7 @@ def row_to_json(row, columns):
 
 
 
-def build_prompt_question(row, prompt_instruction=prompt_instruction):
+def build_prompt_question(row, prompt_instruction=prompt_instruction2):
 
   prompt_question = 'Order: ' + row['order'] + '\n' + \
     'Prior Order: ' + row['prior_order'] + '\n' + \
