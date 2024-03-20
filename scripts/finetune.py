@@ -17,10 +17,8 @@ from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi
 from utilities import *
 
-
-
-
-if name=="__main__":
+def main():
+    
     filename = '../content/CT_Protocol/data/dataset031524.xlsx'
     _, _, test_df = get_dataframes(filename)
     token = userdata.get('HUGGINGFACE_TOKEN')
@@ -53,6 +51,12 @@ if name=="__main__":
 
     base_model_score = test_model(test_df, pipe)
     print('Base model score:', base_model_score)
+
+if __name__ =="__main__":
+    main()
+
+    
+    
 
 
 
