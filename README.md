@@ -16,17 +16,17 @@ I used Mistral 7B Instruct-v0.2 as a base model and then fine-tuned over the tra
 2. The prompt was comprised of a brief set of instructions followed by the clinical data. A typical prompt is given below:
    ```
    The task is to use the provided information for each patient to return the predicted protocol for the CT study in the form of a json object like this:
-{"predicted_order": "CT abdomen pelvis with contrast", "predicted_protocol": "routine", "predicted_comments": ["oral contrast"]}
-The response should be the json object and nothing else. 
+   {"predicted_order": "CT abdomen pelvis with contrast", "predicted_protocol": "routine", "predicted_comments": ["oral contrast"]}
+   The response should be the json object and nothing else. 
 
-'Order: CT chest abdomen pelvis with contrast with MIPS
-Prior Order: CT abdomen pelvis without contrast
-Reason for Exam: Metastatic melanoma, of uncertain site
-Contrast Allergy: 0
-Allergy severity:
-Creatinine (mg/dL): 1.1
-On Dialysis: 0 
-Clinical Summary: The patient is a 45-year-old male with newly diagnosed melanoma (Clark level IV) arising from the left great toe. The scan is for initial staging purposes.’
+   'Order: CT chest abdomen pelvis with contrast with MIPS
+   Prior Order: CT abdomen pelvis without contrast
+   Reason for Exam: Metastatic melanoma, of uncertain site
+   Contrast Allergy: 0
+   Allergy severity:
+   Creatinine (mg/dL): 1.1
+   On Dialysis: 0 
+   Clinical Summary: The patient is a 45-year-old male with newly diagnosed melanoma (Clark level IV) arising from the left great toe. The scan is for initial staging purposes.’
 ```
 
 
