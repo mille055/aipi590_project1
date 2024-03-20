@@ -458,3 +458,19 @@ The task is to use the provided information for each patient to return the predi
 {"predicted_order": "CT abdomen pelvis with contrast", "predicted_protocol": "routine", "predicted_comments": ["oral contrast"]}
 The response should be the json object and nothing else.
 '''
+
+prompt_instruction3 = '''
+The task is to use the provided information for each patient to return the predicted protocol for the CT study in the form of a json object like this:
+{"predicted_order": "CT abdomen pelvis with contrast", "predicted_protocol": "routine", "predicted_comments": ["oral contrast"]}
+The response should be the json object and nothing else.
+
+And for predicted_comments, add comments from the following list if appropriate:
+'oral contrast' if oral (otherwise known as PO) contrast has been requested in the indication.
+'steroid prep' if has a mild allergy to contrast and a contrasted scan has been requested
+'reroute contrast' if the patient has a contraindication to contrast such as elevated creatinine above 2.0 or severe/anaphylaxis contrast allergy
+'reroute coverage' if addition body parts may need to be added to the planned procedure
+'low pelvis' which extends the caudal range of a CT, particularly for malignancies that may not be fully imaged on our routine protocols which includes vulvar cancer, anal cancer, and perhaps rectal cancer if this is the first time evaluation or there is known recurrent disease low in the pelvis.  Things in the inguinal region or upper thigh or perirectal abscess or perianal fistulous disease may be other possible indications. Perineal infection such as Fournier's gangrene would aslo require this.
+'reroute protocol' if there is a complex process such as a fistula that might not be evaluated well on the routine protocols.
+'split' indicates the chest order will be read separately from the abdomen and pelvis, which occurs for lung and esophgeal cancer and for patients with lung transplants
+'valsalva' indicates the imaging is performed while patient does a valsalva maneuver for evaluation of hernias.
+'''
