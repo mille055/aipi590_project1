@@ -16,11 +16,16 @@ import json
 from sklearn.model_selection import train_test_split
 from huggingface_hub import HfApi
 from utilities import *
+from dotenv import load_dotenv
+
 
 def main():
     filename = '../content/CT_Protocol/data/dataset031524.xlsx'
     _, _, test_df = get_dataframes(filename)
-    token = userdata.get('HUGGINGFACE_TOKEN')
+    
+    
+    load_dotenv()
+    token = os.getenv('HUGGINGFACE_TOKEN')
     api = HfApi(token=token)
     base_model = "mistralai/Mistral-7B-Instruct-v0.2"
 
