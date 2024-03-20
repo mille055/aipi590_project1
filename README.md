@@ -11,11 +11,11 @@ Performing the appropriate type of abdominal CT scan is important to high qualit
 ## Results
 
 Custom scores on Test dataset:
-
+'''
 Base Model (Mistral 7B Instruct) - 0.72 
 
 Fine-Tuned Model - 0.95
-
+'''
 For the performance on the protocol class alone, the accuracy for the base model was 73% and that for the fine-tuned model was 94%. The confusion matrix for the fine-tuned model is shown below:
 
 <img src = "assets/confusion_matrix-2.png" width="400" height="400">
