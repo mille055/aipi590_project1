@@ -28,7 +28,7 @@ def build_dataset_from_file(file_path, num_test = 200, output_file = '/content/C
     A dataframe from which the train and test datasets can be derived.
   """
   # Read the excel file into a pandas dataframe
-  df = pd.read_excel(filename)
+  df = pd.read_excel(file_path)
 
   # Rename columns and identify x and y data
   new_column_names = {'Procedure': 'order', 'Reason for Exam Full': 'indication', 'Previous Procedure Name':'prior_order', 'Contrast Allergy': 'contrast_allergy', 'Allergy Severity': 'allergy_severity', 'Creatinine (mg/dL)':'creatinine', 'Dialysis': 'on_dialysis', 'clinical summary':'clinical_summary', 'Predicted Procedure': 'predicted_order', 'Protocol': 'predicted_protocol', 'Protocol comments':'predicted_comments', 'Accession':'accession'}
@@ -78,7 +78,7 @@ def build_prompt_question(row, prompt_instruction=prompt_instruction2):
     'Reason for Exam: ' + row['indication'] + '\n' + \
     'Contrast Allergy: ' + str(bool(row['contrast_allergy'])) + '\n' + \
     'Allergy severity: ' + row['allergy_severity'] + '\n' + \
-    'Creatinine: ' + str(row['creatinine']) + '\n' + \ 
+    'Creatinine: ' + str(row['creatinine']) + '\n' + \
     'On Dialysis: ' + str(bool(row['on_dialysis'])) + '\n' + \
     'Clinical Summary: ' + row['clinical_summary'] + '\n'
 
@@ -326,6 +326,58 @@ def get_dataframes(filename):
     train_data_df = pd.DataFrame(train_data)
 
     return prompt_df, train_data_df, test_data_df
+
+
+def test_model2(df, pipe, prompt_instruction=prompt_instruction2):
+  overall_score = 0
+  results_list = []
+  for index, row in df.iterrows():
+    # get a response and extract json portion from it
+    prompt = f"""[INST] {prompt_instruction}{row['text']} [/INST]"""
+    predicted_answer = get_response(prompt, pipe)
+    print('********\n')
+    #print('predicted_answer is ', predicted_answer)
+    extracted_answer = extract_and_parse_json2(predicted_answer)
+    print('********\n')
+    print('extracted_answer is ', extracted_answer, type(extracted_answer))
+
+    # get the ground truth answer
+    true_answer = row['labels']
+    #print('true_answer', true_answer, type(true_answer))
+    true_answer_json = json.loads(true_answer.replace("'", '"'))
+
+    print('true answer json:', true_answer_json, type(true_answer_json))
+
+    # #predicted_answer = json.loads(predicted_answer)
+    # print('predicted_answer:', predicted_answer, type(predicted_answer))
+
+    score, accession, predicted_order, predicted_protocol, predicted_comments = response_score(extracted_answer, true_answer_json)
+    overall_score += score
+    print(f"Progress: case {index+1} of {len(df)}")
+    print(f"score this case: {score}")
+
+    # Accumulate the case results
+    results_list.append({
+            "index": index,
+
+
+            "protocol": true_answer_json['predicted_protocol'],
+            "predicted_protocol": predicted_protocol,
+            "order": true_answer_json['predicted_order'],
+            "predicted_order": predicted_order,
+            "comments": true_answer_json['predicted_comments'],
+            "predicted_comments": predicted_comments,
+            "score": score
+        })
+
+  results = pd.DataFrame(results_list)
+  print(results)
+  print(f"Average score: {overall_score/len(df)}")
+  results.to_csv('/content/CT_Protocol/data/results.csv', index=False)
+
+  return overall_score/len(df)
+
+
 
 
 prompt_instruction = '''
