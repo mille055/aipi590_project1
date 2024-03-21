@@ -153,51 +153,14 @@ def extract_and_parse_json(response):
     # which is invalid JSON format and needs to be replaced with double quotes.
     # Also assuming the JSON-like object is always enclosed in curly braces.
     response = str(response)
-    # try:
-    #     # Extract the JSON-like string using a regular expression
-    #     #response = response.replace("'", '"')
-
-
-    #     json_str_match = re.search(r'\{.*\}', response)
-    #     if json_str_match:
-    #       json_str = json_str_match.group(0)
-    #         #print(json_str_match)
-    #       # Replace single quotes with double quotes to make it valid JSON
-    #       json_str_valid = json_str.replace("'", '"')
-    #       # Parse the valid JSON string into a Python dictionary
-    #       json_data = json.loads(json_str_valid)
-    #       return json_data
-    #     else:
-    #       return None  # No JSON-like string found
+   
     try:
         # Correctly handle both empty strings and string-represented empty lists for predicted_comments.
         corrected_response = response.replace("'", '"')
 
-        # Replace string-represented empty list "[]" with an actual JSON list []
-        #corrected_response = re.sub(r'("predicted_comments":)\s*"\[\]"', r'\1 []', corrected_response)
-
-        # Handle the case where predicted_comments is an empty string by converting to an empty list []
-        # corrected_response = re.sub(r'("predicted_comments":)\s*""', r'\1 []', corrected_response)
-
+        
         print('Corrected response:', corrected_response)
-        # normalized_response = response.replace("'", '"')
-        # corrected_response = re.sub(r'"predicted_comments":\s*""', '"predicted_comments": "[]"', normalized_response)
-        # corrected_response = re.sub(r'"predicted_comments":\s*"(\[.*?\])"', r'"predicted_comments": \1', corrected_response)
-
-        # This regex looks for the problematic list pattern and replaces single quotes
-        # that incorrectly encapsulate list items, attempting to correct them
-        # to a JSON-valid format. This is a basic and not exhaustive correction.
-        # corrected_response = re.sub(r'"\["(.*?)"\]"', r'["\1"]', response)
-        # #print(corrected_response)
-        # # Parse the corrected response into a Python dictionary
-
-        # # Correct the representation for an empty predicted_comments list
-        # corrected_response = re.sub(r'"predicted_comments":\s*""', '"predicted_comments": []', response)
-        # corrected_response = re.sub(r'"\["(.*?)"\]"', r'["\1"]', corrected_response)
-
-        # # This approach assumes the rest of the JSON is correctly formatted
-        # corrected_response = corrected_response.replace("'", '"')
-
+        
         # Parse the corrected response into a Python dictionary.
         json_data = json.loads(corrected_response)
         print('type of json data', type(json_data))
