@@ -148,7 +148,7 @@ def main():
 
 
     # Save the fine-tuned model
-    trainer.model.save_pretrained(new_model)
+    trainer.model.save_pretrained(save_model_name)
     model.config.use_cache = True
 
     trainer.model.push_to_hub(save_model_name, token=write_token)
@@ -158,7 +158,7 @@ if __name__ =="__main__":
     main()
 
     
-    
+
 
 
 
